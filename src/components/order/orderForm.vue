@@ -38,12 +38,6 @@
                             <Option v-for="i in fetchData.assigned" :value="i" :key="i">{{ i }}</Option>
                         </Select>
                     </FormItem>
-                    <FormItem label="定时执行">
-                        <DatePicker format="yyyy-MM-dd HH:mm" type="datetime" placeholder="选择时间点"
-                                    :options="invalidDate"
-                                    @on-change="getDate"
-                                    :editable="false"></DatePicker>
-                    </FormItem>
                     <FormItem label="是否备份" prop="backup">
                         <RadioGroup v-model="formItem.backup">
                             <Radio :label=1>是</Radio>
